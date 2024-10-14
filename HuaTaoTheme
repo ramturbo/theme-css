@@ -132,6 +132,23 @@
     content: none !important;
 }
 
+.container-1eFtFS {
+    background-image: var(--jumping-gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: jumpAnimation 1s infinite;
+}
+
+@keyframes jumpAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .container-1eFtFS::after { content: "Scared Yet?"; }
 .homeIcon-r0w4ny path { fill: transparent; }
 
