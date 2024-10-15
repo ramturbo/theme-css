@@ -1,61 +1,59 @@
 /**
- * @name CustomDiscordThemeTemplate
- * @author Mazi
- * @description Fully customizable Discord theme template. Fill in the blanks for colors, images, and gifs to make it your own!
+ * @name HuTaoTheme
+ * @author Nyria#3863
+ * @description A theme based on @Melonturtle_ stream design
+ * @invite rtBQX5D3bD
  * @version 1.0
  */
 @import url("https://nyri4.github.io/LilyPichu/main.css");
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* Optional: Replace 'Poppins' with your preferred font */
+@import url('https://fonts.googleapis.com/css2?family=Miyu&display=swap');
 
-/* --- Start Customization Below --- */
 :root {
-    /* --- Add your custom images and gifs here --- */
-    --jumping-gif: url(''); /* Add your jumping gif link */
-    --background-tertiary-alt: url(""); /* Add your background image link */
+    /* --- User variables --- */
 
-    /* --- Customize border radius --- */
-    --border-radius: 20px; /* Optional: Adjust if needed */
+    /* Jumping GIF */
+    --jumping-gif: url('https://64.media.tumblr.com/aaf627eec6bfd0e25456448d50b00b54/5055027a25ccf478-f5/s500x750/f3aa5c032527088805f37f0dcd0c52e0cea3e510.gifv');
 
-    /* --- Add your custom colors here --- */
-    --main-color: #; /* Add your primary color */
-    --text-normal: #; /* Add your main text color */
-    --background-primary: rgba( , , , ); /* Add your main background color (RGBA format) */
-    --background-secondary: rgba( , , , ); /* Add your secondary background color */
+    /* Background */
+    --background-tertiary-alt: url("https://i.pinimg.com/1200x/aa/78/79/aa7879c74aca5921d7d186aacd96433a.jpg");
+
+    /* Border-radius for the whole theme */
+    --border-radius: 20px;
 }
 
 body {
-    font-family: 'Poppins', sans-serif; /* Optional: Replace 'Poppins' with another font if you like */
+    font-family: 'Miyu', sans-serif; /* Apply Miyu font */
 }
 
 .theme-dark {
     /* Text */
-    --text-normal: var(--text-normal);
-    --header-primary: var(--text-normal);
-    --interactive-normal: #; /* Add your interactive color */
-    --channels-default: var(--text-normal);
+    --text-normal: #f8e1e5;
+    --header-primary: #f8e1e5;
+    --interactive-normal: #fab1bd;
+    --channels-default: #f8e1e5;
 
-    --text-muted: #; /* Add your muted text color */
-    --interactive-muted: #; /* Add your muted interactive color */
+    --text-muted: #e2c1c7;
+    --interactive-muted: #ad8c91;
 
-    --header-secondary: #; /* Add secondary header text color */
-    --interactive-hover: #; /* Add hover color for interactive elements */
-    --interactive-active: #; /* Add active color for interactive elements */
+    --header-secondary: #e2c1c7;
+    --interactive-hover: #e2c1c7;
+    --interactive-active: #e2c1c7;
 
-    /* Background */
-    --background-primary: var(--background-primary) !important;
-    --background-secondary: var(--background-secondary);
-    --background-secondary-alt: rgba( , , , ); /* Optional: Add another background color */
-    --background-tertiary: #; /* Add tertiary background color */
-    --background-floating: #; /* Add floating background color */
-    --background-accent: var(--main-color);
+    /* Background color */
+    --background-primary: rgba(46, 31, 34, 0.7) !important;
+    --background-secondary: rgba(75, 49, 50, 0.9);
+    --background-secondary-alt: rgba(117, 73, 82, 0.9);
+    --background-tertiary: #220f14;
+    --background-floating: #221115;
+    --background-accent: #c5536c;
     --channeltextarea-background: var(--background-secondary);
-    --background-modifier-hover: rgba( , , , ); /* Add background hover modifier */
-    --background-modifier-active: rgba( , , , ); /* Add background active modifier */
-    --background-modifier-selected: rgba( , , , ); /* Add background selected modifier */
-    --toast-background: # !important;
-    --toast-header: # !important;
-    --toast-contents: # !important;
-    --toast-border: # !important;
+    --background-modifier-hover: rgba(56, 31, 31, 0.32);
+    --background-modifier-active: rgba(19, 12, 12, 0.32);
+    --background-modifier-selected: rgba(31, 21, 21, 0.32);
+    --toast-background: #5e3640 !important;
+    --toast-header: #3b1d24 !important;
+    --toast-contents: #49292f !important;
+    --toast-border: #49292f !important;
 
     /* Scrollbar */
     --scrollbar-auto-thumb: var(--background-tertiary);
@@ -67,17 +65,19 @@ body {
     --deprecated-quickswitcher-input-background: var(--background-primary);
 }
 
-/* Color and background tweaks for specific elements */
-.colorBrand-ROmMP1 { color: var(--main-color); }
+.colorBrand-ROmMP1 { color: #bd4b63; }
 .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { background-color: var(--background-modifier-hover) !important; }
 
-/* Button customization */
-.lookFilled-1Gx00P { background-color: var(--main-color) !important; }
-.lookFilled-1Gx00P:active, .lookFilled-1Gx00P:hover { background-color: # !important; } /* Add hover/active state color */
-.lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) { color: var(--main-color); border-color: var(--main-color); }
+/* Buttons */
+.lookFilled-1Gx00P { background-color: #c5536c !important; }
+.lookFilled-1Gx00P:active, .lookFilled-1Gx00P:hover { background-color: #b64a61 !important; }
+.lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) { color: #c5536c; border-color: #c5536c; }
+
+/* Hover background */
+.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal); }
 
 /* Additional Background Customizations */
-:root .app-2CXKsg::before { background: url(var(--background-tertiary-alt)); }
+:root .app-2CXKsg::before { background: url("https://i.pinimg.com/1200x/aa/78/79/aa7879c74aca5921d7d186aacd96433a.jpg"); }
 
 :root .app-3xd6d0::before,
 :root .app-3xd6d0::after, 
@@ -89,12 +89,11 @@ body {
     content: none !important;
 }
 
-/* Customize text or messages here */
-.container-1eFtFS::after { content: ""; } /* Add your custom message */
+.container-1eFtFS::after { content: "Scared Yet?"; }
 .homeIcon-r0w4ny path { fill: transparent; }
 
 .homeIcon-r0w4ny {
-    background: url(''); /* Add your custom home icon image */
+    background: url('https://cdn.discordapp.com/attachments/530917134100856832/989239956981547088/original.jpg') center/cover no-repeat;
     min-width: 60px;
     min-height: 60px;
 }
