@@ -15,7 +15,7 @@
     --jumping-gif: url('https://64.media.tumblr.com/aaf627eec6bfd0e25456448d50b00b54/5055027a25ccf478-f5/s500x750/f3aa5c032527088805f37f0dcd0c52e0cea3e510.gifv');
 
     /* Background */
-    --background-tertiary-alt: url("https://i.pinimg.com/1200x/aa/78/79/aa7879c74aca5921d7d186aacd96433a.jpg");
+    --background-tertiary-alt: url("https://cdn.wallpapersafari.com/63/86/HcmDPB.jpg");
 
     /* Border-radius for the whole theme */
     --border-radius: 20px;
@@ -76,8 +76,55 @@ body {
 /* Hover background */
 .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal); }
 
+.theme-light {
+    /* Text */
+    --text-normal: #a86373;
+    --header-primary: #a86373;
+    --interactive-normal: #a86373;
+    --channels-default: #a86373;
+
+    --text-muted: #a86373;
+    --interactive-muted: #cf92a0;
+
+    --header-secondary: #cf92a0;
+    --interactive-hover: #be7d8c;
+    --interactive-active: #b36f7f;
+
+    /* Background color */
+    --background-primary: #FFFFFF;
+    --background-secondary: #ffeeee;
+    --background-secondary-alt: #fdc7c7;
+    --background-tertiary: #ffbbbb;
+    --background-floating: #ffbbbb;
+    --background-accent: #c5536c;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgba(56, 31, 31, 0.062);
+    --background-modifier-active: rgba(19, 12, 12, 0.123);
+    --background-modifier-selected: rgba(31, 21, 21, 0.11);
+
+    /* Scrollbar */
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    /* Other */
+    --deprecated-quickswitcher-input-background: var(--background-primary);
+}
+
+.colorBrand-ROmMP1 { color: #c5536c; }
+.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { background-color: var(--background-modifier-hover) !important; }
+
+/* Buttons */
+.lookFilled-1Gx00P { background-color: #c5536c !important; }
+.lookFilled-1Gx00P:active, .lookFilled-1Gx00P:hover { background-color: #b64a61 !important; }
+.lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) { color: #c5536c; border-color: #c5536c; }
+
+/* Hover background */
+.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal); }
+
 /* Additional Background Customizations */
-:root .app-2CXKsg::before { background: url("https://i.pinimg.com/1200x/aa/78/79/aa7879c74aca5921d7d186aacd96433a.jpg"); }
+:root .app-2CXKsg::before { background: url(https://cdn.wallpapersafari.com/63/86/HcmDPB.jpg); }
 
 :root .app-3xd6d0::before,
 :root .app-3xd6d0::after, 
@@ -93,7 +140,7 @@ body {
 .homeIcon-r0w4ny path { fill: transparent; }
 
 .homeIcon-r0w4ny {
-    background: url('https://cdn.discordapp.com/attachments/530917134100856832/989239956981547088/original.jpg') center/cover no-repeat;
+    background: url('https://i.pinimg.com/1200x/aa/78/79/aa7879c74aca5921d7d186aacd96433a.jpg') center/cover no-repeat;
     min-width: 60px;
     min-height: 60px;
 }
