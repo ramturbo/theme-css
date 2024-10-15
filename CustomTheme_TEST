@@ -1,89 +1,100 @@
 /**
- * @name CustomTheme
- * @author YourName
- * @description A clean, customizable Discord theme
+ * @name CustomDiscordThemeTemplate
+ * @author Mazi
+ * @description Fully customizable Discord theme template. Fill in the blanks for colors, images, and gifs to make it your own!
  * @version 1.0
  */
+@import url("https://nyri4.github.io/LilyPichu/main.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); /* Optional: Replace 'Poppins' with your preferred font */
 
-/* Import external resources, like fonts or additional CSS if needed */
-@import url('https://fonts.googleapis.com/css2?family=YourFontChoice&display=swap');
-
+/* --- Start Customization Below --- */
 :root {
-    /* --- User variables --- */
+    /* --- Add your custom images and gifs here --- */
+    --jumping-gif: url(''); /* Add your jumping gif link */
+    --background-tertiary-alt: url(""); /* Add your background image link */
 
-    /* Background image (optional) */
-    --background-tertiary-alt: url("YourBackgroundImageURL");
+    /* --- Customize border radius --- */
+    --border-radius: 20px; /* Optional: Adjust if needed */
 
-    /* Border-radius for the entire theme */
-    --border-radius: 20px;
-
-    /* Colors */
-    --text-normal: #ffffff;  /* Default text color */
-    --text-muted: #b0b0b0;   /* Muted text color */
-    --interactive-normal: #ffa7c4;  /* Button and interactive elements */
-    --interactive-hover: #ff85a6;   /* Hover state */
-    --interactive-active: #ff6589;  /* Active state */
-    --background-primary: #121212;  /* Main background */
-    --background-secondary: #1e1e1e; /* Secondary background */
-    --background-floating: #2c2c2c; /* Floating elements like modals */
-    --scrollbar-auto-thumb: #5c5c5c; /* Scrollbar */
-    --scrollbar-auto-track: transparent;
+    /* --- Add your custom colors here --- */
+    --main-color: #; /* Add your primary color */
+    --text-normal: #; /* Add your main text color */
+    --background-primary: rgba( , , , ); /* Add your main background color (RGBA format) */
+    --background-secondary: rgba( , , , ); /* Add your secondary background color */
 }
 
 body {
-    font-family: 'YourFontChoice', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Optional: Replace 'Poppins' with another font if you like */
 }
 
-/* General theme adjustments */
 .theme-dark {
-    --background-primary: #181818;
-    --background-secondary: #222222;
-    --text-normal: #f0f0f0;
+    /* Text */
+    --text-normal: var(--text-normal);
+    --header-primary: var(--text-normal);
+    --interactive-normal: #; /* Add your interactive color */
+    --channels-default: var(--text-normal);
+
+    --text-muted: #; /* Add your muted text color */
+    --interactive-muted: #; /* Add your muted interactive color */
+
+    --header-secondary: #; /* Add secondary header text color */
+    --interactive-hover: #; /* Add hover color for interactive elements */
+    --interactive-active: #; /* Add active color for interactive elements */
+
+    /* Background */
+    --background-primary: var(--background-primary) !important;
+    --background-secondary: var(--background-secondary);
+    --background-secondary-alt: rgba( , , , ); /* Optional: Add another background color */
+    --background-tertiary: #; /* Add tertiary background color */
+    --background-floating: #; /* Add floating background color */
+    --background-accent: var(--main-color);
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgba( , , , ); /* Add background hover modifier */
+    --background-modifier-active: rgba( , , , ); /* Add background active modifier */
+    --background-modifier-selected: rgba( , , , ); /* Add background selected modifier */
+    --toast-background: # !important;
+    --toast-header: # !important;
+    --toast-contents: # !important;
+    --toast-border: # !important;
+
+    /* Scrollbar */
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    /* Other */
+    --deprecated-quickswitcher-input-background: var(--background-primary);
 }
 
-/* Channel list and sidebar */
-.sidebar-2K8pFh {
-    background-color: var(--background-secondary);
-}
+/* Color and background tweaks for specific elements */
+.colorBrand-ROmMP1 { color: var(--main-color); }
+.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { background-color: var(--background-modifier-hover) !important; }
 
-.sidebar-2K8pFh .container-2cd8Mz {
-    color: var(--text-normal);
-}
-
-/* Chat area */
-.chat-3bRxxu {
-    background-color: var(--background-primary);
-    color: var(--text-normal);
-}
-
-/* Message area */
-.message-2qnXI6 {
-    background-color: var(--background-secondary);
-    border-radius: var(--border-radius);
-    color: var(--text-normal);
-}
-
-/* Scrollbar styling */
-::-webkit-scrollbar-thumb {
-    background-color: var(--scrollbar-auto-thumb);
-}
-
-/* Button styles */
-.lookFilled-1Gx00P {
-    background-color: var(--interactive-normal);
-}
-
-.lookFilled-1Gx00P:hover {
-    background-color: var(--interactive-hover);
-}
+/* Button customization */
+.lookFilled-1Gx00P { background-color: var(--main-color) !important; }
+.lookFilled-1Gx00P:active, .lookFilled-1Gx00P:hover { background-color: # !important; } /* Add hover/active state color */
+.lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) { color: var(--main-color); border-color: var(--main-color); }
 
 /* Additional Background Customizations */
-:root .app-2CXKsg::before {
-    background: var(--background-tertiary-alt);
+:root .app-2CXKsg::before { background: url(var(--background-tertiary-alt)); }
+
+:root .app-3xd6d0::before,
+:root .app-3xd6d0::after, 
+:root .app-2CXKsg::after,
+:root .layers-OrUESM::before,
+:root .layers-OrUESM::after,
+:root .bg-1QIAus::after,
+:root .bg-1QIAus::before {
+    content: none !important;
 }
 
-/* Remove unwanted content */
-:root .app-2CXKsg::after,
-:root .layers-OrUESM::after {
-    content: none !important;
+/* Customize text or messages here */
+.container-1eFtFS::after { content: ""; } /* Add your custom message */
+.homeIcon-r0w4ny path { fill: transparent; }
+
+.homeIcon-r0w4ny {
+    background: url(''); /* Add your custom home icon image */
+    min-width: 60px;
+    min-height: 60px;
 }
