@@ -1,126 +1,89 @@
-/* Root variables for your main colors */
+/**
+ * @name CustomTheme
+ * @author YourName
+ * @description A clean, customizable Discord theme
+ * @version 1.0
+ */
+
+/* Import external resources, like fonts or additional CSS if needed */
+@import url('https://fonts.googleapis.com/css2?family=YourFontChoice&display=swap');
+
 :root {
-    --main-bg-color: #000000; /* Fill in your main background color */
-    --secondary-bg-color: #1a1a1a; /* Secondary background (e.g., sidebars) */
-    --accent-color: #ffccde; /* Accent color (e.g., highlights) */
-    --text-color: #ffffff; /* Primary text color */
-    --link-color: #ffccde; /* Link color */
-    --hover-bg-color: #ae2e4b; /* Hover background color */
-    --dm-click-color: #aec6ff; /* Color for clicked DM names */
-    --font-family: 'Poppins', sans-serif; /* Change this to your preferred font */
+    /* --- User variables --- */
+
+    /* Background image (optional) */
+    --background-tertiary-alt: url("YourBackgroundImageURL");
+
+    /* Border-radius for the entire theme */
+    --border-radius: 20px;
+
+    /* Colors */
+    --text-normal: #ffffff;  /* Default text color */
+    --text-muted: #b0b0b0;   /* Muted text color */
+    --interactive-normal: #ffa7c4;  /* Button and interactive elements */
+    --interactive-hover: #ff85a6;   /* Hover state */
+    --interactive-active: #ff6589;  /* Active state */
+    --background-primary: #121212;  /* Main background */
+    --background-secondary: #1e1e1e; /* Secondary background */
+    --background-floating: #2c2c2c; /* Floating elements like modals */
+    --scrollbar-auto-thumb: #5c5c5c; /* Scrollbar */
+    --scrollbar-auto-track: transparent;
 }
 
-/* General Settings */
 body {
-    background-color: var(--main-bg-color);
-    font-family: var(--font-family);
+    font-family: 'YourFontChoice', sans-serif;
 }
 
-/* Sidebar and Channel List */
+/* General theme adjustments */
+.theme-dark {
+    --background-primary: #181818;
+    --background-secondary: #222222;
+    --text-normal: #f0f0f0;
+}
+
+/* Channel list and sidebar */
 .sidebar-2K8pFh {
-    background-color: var(--secondary-bg-color);
-    border-right: 1px solid var(--accent-color);
+    background-color: var(--background-secondary);
 }
 
 .sidebar-2K8pFh .container-2cd8Mz {
-    color: var(--text-color);
+    color: var(--text-normal);
 }
 
-.sidebar-2K8pFh .container-2cd8Mz:hover {
-    background-color: var(--hover-bg-color);
-}
-
-/* Channels and Chat */
-.channels-Ie2l6A {
-    background-color: var(--secondary-bg-color);
-    color: var(--text-color);
-}
-
-.channels-Ie2l6A:hover {
-    background-color: var(--hover-bg-color);
-}
-
+/* Chat area */
 .chat-3bRxxu {
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
+    background-color: var(--background-primary);
+    color: var(--text-normal);
 }
 
-/* Chat Input Area */
-.textArea-12jD-V {
-    background-color: var(--secondary-bg-color);
-    border: 1px solid var(--accent-color);
-    color: var(--text-color);
-}
-
-.textArea-12jD-V:hover {
-    background-color: var(--hover-bg-color);
-}
-
-/* Messages */
+/* Message area */
 .message-2qnXI6 {
-    background-color: var(--secondary-bg-color);
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 8px;
+    background-color: var(--background-secondary);
+    border-radius: var(--border-radius);
+    color: var(--text-normal);
 }
 
-.message-2qnXI6:hover {
-    background-color: var(--hover-bg-color);
+/* Scrollbar styling */
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-auto-thumb);
 }
 
-.markup-2BOw-j {
-    color: var(--text-color);
+/* Button styles */
+.lookFilled-1Gx00P {
+    background-color: var(--interactive-normal);
 }
 
-/* Links */
-a {
-    color: var(--link-color);
+.lookFilled-1Gx00P:hover {
+    background-color: var(--interactive-hover);
 }
 
-a:hover {
-    text-decoration: underline;
-    color: var(--accent-color);
+/* Additional Background Customizations */
+:root .app-2CXKsg::before {
+    background: var(--background-tertiary-alt);
 }
 
-/* Buttons */
-.button-38aScr {
-    background-color: var(--accent-color);
-    color: var(--secondary-bg-color);
-    border-radius: 5px;
-}
-
-.button-38aScr:hover {
-    background-color: var(--hover-bg-color);
-    color: var(--text-color);
-}
-
-/* Member List */
-.members-1998pB {
-    background-color: var(--secondary-bg-color);
-    border-left: 1px solid var(--accent-color);
-}
-
-.member-3H6Hi1 {
-    background-color: var(--secondary-bg-color);
-    color: var(--text-color);
-}
-
-.member-3H6Hi1:hover {
-    background-color: var(--hover-bg-color);
-}
-
-/* Emojis */
-.emojiPicker-3j58wQ .emojiButton-3nQnNw {
-    background-color: var(--secondary-bg-color);
-    color: var(--text-color);
-}
-
-.emojiPicker-3j58wQ .emojiButton-3nQnNw:hover {
-    background-color: var(--hover-bg-color);
-}
-
-/* Direct Message profile (clicked name) */
-.channel-1.selected {
-    background-color: var(--dm-click-color);
-    color: var(--text-color);
+/* Remove unwanted content */
+:root .app-2CXKsg::after,
+:root .layers-OrUESM::after {
+    content: none !important;
 }
