@@ -1,0 +1,126 @@
+/* Root variables for your main colors */
+:root {
+    --main-bg-color: #000000; /* Fill in your main background color */
+    --secondary-bg-color: #1a1a1a; /* Secondary background (e.g., sidebars) */
+    --accent-color: #ffccde; /* Accent color (e.g., highlights) */
+    --text-color: #ffffff; /* Primary text color */
+    --link-color: #ffccde; /* Link color */
+    --hover-bg-color: #ae2e4b; /* Hover background color */
+    --dm-click-color: #aec6ff; /* Color for clicked DM names */
+    --font-family: 'Poppins', sans-serif; /* Change this to your preferred font */
+}
+
+/* General Settings */
+body {
+    background-color: var(--main-bg-color);
+    font-family: var(--font-family);
+}
+
+/* Sidebar and Channel List */
+.sidebar-2K8pFh {
+    background-color: var(--secondary-bg-color);
+    border-right: 1px solid var(--accent-color);
+}
+
+.sidebar-2K8pFh .container-2cd8Mz {
+    color: var(--text-color);
+}
+
+.sidebar-2K8pFh .container-2cd8Mz:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* Channels and Chat */
+.channels-Ie2l6A {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+}
+
+.channels-Ie2l6A:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.chat-3bRxxu {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+/* Chat Input Area */
+.textArea-12jD-V {
+    background-color: var(--secondary-bg-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+}
+
+.textArea-12jD-V:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* Messages */
+.message-2qnXI6 {
+    background-color: var(--secondary-bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.message-2qnXI6:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.markup-2BOw-j {
+    color: var(--text-color);
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+/* Buttons */
+.button-38aScr {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color);
+    border-radius: 5px;
+}
+
+.button-38aScr:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--text-color);
+}
+
+/* Member List */
+.members-1998pB {
+    background-color: var(--secondary-bg-color);
+    border-left: 1px solid var(--accent-color);
+}
+
+.member-3H6Hi1 {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+}
+
+.member-3H6Hi1:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* Emojis */
+.emojiPicker-3j58wQ .emojiButton-3nQnNw {
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+}
+
+.emojiPicker-3j58wQ .emojiButton-3nQnNw:hover {
+    background-color: var(--hover-bg-color);
+}
+
+/* Direct Message profile (clicked name) */
+.channel-1.selected {
+    background-color: var(--dm-click-color);
+    color: var(--text-color);
+}
