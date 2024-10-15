@@ -6,9 +6,9 @@
  * @version 1.0
  */
 @import url("https://nyri4.github.io/LilyPichu/main.css");
+@import url('https://fonts.googleapis.com/css2?family=Miyu&display=swap');
 
 :root {
-
     /* --- User variables --- */
 
     /* Jumping GIF */
@@ -19,6 +19,10 @@
 
     /* Border-radius for the whole theme */
     --border-radius: 20px;
+}
+
+body {
+    font-family: 'Miyu', sans-serif; /* Apply Miyu font */
 }
 
 .theme-dark {
@@ -130,23 +134,6 @@
 :root .bg-1QIAus::after,
 :root .bg-1QIAus::before {
     content: none !important;
-}
-
-.container-1eFtFS {
-    background-image: var(--jumping-gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation: jumpAnimation 1s infinite;
-}
-
-@keyframes jumpAnimation {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
 }
 
 .container-1eFtFS::after { content: "Scared Yet?"; }
