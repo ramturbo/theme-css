@@ -1,6 +1,8 @@
 /* Start with Amoled Cord Base Styles */
 @import url("https://luckfire.github.io/amoled-cord/src/amoled-cord.css");
 
+@import url("https://nyri4.github.io/LilyPichu/main.css");
+
 /* --- User-defined variables --- */
 :root {
     /* Custom Background */
