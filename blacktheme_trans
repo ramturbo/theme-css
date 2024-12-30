@@ -27,35 +27,34 @@ body {
 
 .theme-dark {
   /* Text Colors */
-    --text-normal: #fff; /* Keep white text for readability */
-    --header-primary: #fff; /* White headers for contrast */
-    --interactive-normal: #fab1bd; /* Soft pink, fits AMOLED's contrast */
-    --channels-default: #f8e1e5; /* Light pink for subtle emphasis */
+    /* Text */
+    --text-normal: #fff;
+    --header-primary: #fff;
+    --interactive-normal: #fab1bd;
+    --channels-default: #f8e1e5;
 
-    --text-muted: #e2c1c7; /* Muted light pinkish tones for less prominent text */
-    --interactive-muted: #ad8c91; /* Muted pinkish-brown for less interactive elements */
+    --text-muted: #e2c1c7;
+    --interactive-muted: #ad8c91;
 
-    --header-secondary: #e2c1c7; /* Secondary header in light pink */
-    --interactive-hover: #e2c1c7; /* Hover effect in muted pink */
-    --interactive-active: #e2c1c7; /* Active interaction color, matching hover */
-}
+    --header-secondary: #e2c1c7;
+    --interactive-hover: #e2c1c7;
+    --interactive-active: #e2c1c7;
 
-/* Background Colors */
-    --background-primary: rgba(46, 31, 34, 0.7) !important; /* Dark background with a touch of transparency */
-    --background-secondary: rgba(75, 49, 50, 0.9); /* Dark reddish shade for secondary backgrounds */
-    --background-secondary-alt: rgba(117, 73, 82, 0.9); /* Slightly lighter for alternate background */
-    --background-tertiary: #220f14; /* Very dark background for tertiary areas */
-    --background-floating: #221115; /* Floating elements with subtle darkness */
-    --background-accent: #c5536c; /* Bold accent color with a deep reddish tone */
-    --channeltextarea-background: var(--background-secondary); /* Use secondary background for text areas */
-    --background-modifier-hover: rgba(56, 31, 31, 0.32); /* Slightly darkened hover background */
-    --background-modifier-active: rgba(19, 12, 12, 0.32); /* More intense hover for active state */
-    --background-modifier-selected: rgba(31, 21, 21, 0.32); /* Selected background effect */
-    --toast-background: #5e3640 !important; /* Toast background with a muted red */
-    --toast-header: #3b1d24 !important; /* Header of toast in a darker shade */
-    --toast-contents: #49292f !important; /* Toast content with a slight red tint */
-    --toast-border: #49292f !important; /* Toast border matches content for consistency */
-}
+    /* Background color */
+    --background-primary: rgba(46, 31, 34, 0.7) !important;
+    --background-secondary: rgba(75, 49, 50, 0.9);
+    --background-secondary-alt: rgba(117, 73, 82, 0.9);
+    --background-tertiary: #220f14;
+    --background-floating: #221115;
+    --background-accent: #c5536c;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgba(56, 31, 31, 0.32);
+    --background-modifier-active: rgba(19, 12, 12, 0.32);
+    --background-modifier-selected: rgba(31, 21, 21, 0.32);
+    --toast-background: #5e3640 !important;
+    --toast-header: #3b1d24 !important;
+    --toast-contents: #49292f !important;
+    --toast-border: #49292f !important;
 
 
     /* Scrollbar */
