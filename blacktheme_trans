@@ -11,6 +11,22 @@
     --border-radius: 20px;
 }
 
+/* Example usage to ensure variables apply */
+body {
+    background: var(--background-tertiary-alt) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: var(--jumping-gif);
+    border-radius: var(--border-radius);
+    width: 300px;
+    height: 300px;
+}
+
+
 :root {
   /* ignore these, unless you wanna mess with them, then go for it. they may be removed at any time, though. */
   --lightness-600-660: 0%;
