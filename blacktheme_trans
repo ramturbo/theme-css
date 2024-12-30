@@ -30,7 +30,7 @@ body {
     /* Text */
     --text-normal: #fff;
     --header-primary: #fff;
-    --interactive-normal: #fab1bd;
+    --interactive-normal: #fff;
     --channels-default: #f8e1e5;
 
     --text-muted: #e2c1c7;
