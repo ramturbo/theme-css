@@ -1,4 +1,17 @@
 :root {
+    /* --- User variables --- */
+
+    /* Jumping GIF */
+    --jumping-gif: url('https://64.media.tumblr.com/aaf627eec6bfd0e25456448d50b00b54/5055027a25ccf478-f5/s500x750/f3aa5c032527088805f37f0dcd0c52e0cea3e510.gif');
+
+    /* Background */
+    --background-tertiary-alt: url("https://i.pinimg.com/736x/c8/34/e1/c834e1f4e6231c7f15dbd1295dbdb189.jpg");
+
+    /* Border-radius for the whole theme */
+    --border-radius: 20px;
+}
+
+:root {
   /* ignore these, unless you wanna mess with them, then go for it. they may be removed at any time, though. */
   --lightness-600-660: 0%;
   --lightness-700-760: 0%;
