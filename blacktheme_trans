@@ -43,7 +43,7 @@ body {
     /* Background color */
     --background-primary: rgba(8, 8, 8, 0.7) !important;
     --background-secondary: rgba(0, 0, 0, 0.8);
-    --background-secondary-alt: rgba(117, 73, 82, 0.9);
+    --background-secondary-alt: rgba(0, 0, 0, 0.8);
     --background-tertiary: #220f14;
     --background-floating: #221115;
     --background-accent: #c5536c;
