@@ -36,7 +36,7 @@ body {
     --text-muted: #e2c1c7;
     --interactive-muted: #ad8c91;
 
-    --header-secondary: #e2c1c7;
+    --header-secondary: #000000;
     --interactive-hover: #e2c1c7;
     --interactive-active: #e2c1c7;
 
