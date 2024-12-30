@@ -1,105 +1,62 @@
-/* Start with Amoled Cord Base Styles */
-@import url("https://luckfire.github.io/amoled-cord/src/amoled-cord.css");
-
+/**
+ * @name HuTaoTheme
+ * @author Nyria#3863
+ * @description A theme based on @Melonturtle_ stream design
+ * @invite rtBQX5D3bD
+ * @version 1.0
+ */
 @import url("https://nyri4.github.io/LilyPichu/main.css");
+@import url('https://fonts.googleapis.com/css2?family=Miyu&display=swap');
 
-/* --- User-defined variables --- */
 :root {
-    /* Custom Background */
+    /* --- User variables --- */
+
+    /* Jumping GIF */
+    --jumping-gif: url('https://64.media.tumblr.com/aaf627eec6bfd0e25456448d50b00b54/5055027a25ccf478-f5/s500x750/f3aa5c032527088805f37f0dcd0c52e0cea3e510.gif');
+
+    /* Background */
     --background-tertiary-alt: url("https://i.pinimg.com/736x/c8/34/e1/c834e1f4e6231c7f15dbd1295dbdb189.jpg");
 
-    /* Border-radius for elements */
+    /* Border-radius for the whole theme */
     --border-radius: 20px;
-
-    /* Transparency levels */
-    --transparency-level: rgba(0, 0, 0, 0.7); /* Adjust for inner transparency effect */
 }
 
-/* Apply custom background image to the entire body */
 body {
-    background: var(--background-tertiary-alt) no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-}
-
-/* Inner transparency for content boxes (like in HuaTao theme) */
-.container,
-.header,
-.card {
-    background-color: var(--transparency-level);
-    border-radius: var(--border-radius);
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border */
-}
-
-/* Additional hover effect on cards for subtle interactivity */
-.card:hover {
-    border-color: rgba(255, 255, 255, 0.3); /* Brighter border on hover */
-}
-
-/* Buttons with transparency and border-radius */
-button {
-    background-color: var(--transparency-level);
-    color: #fff;
-    border-radius: var(--border-radius);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 10px 20px;
-}
-
-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Footer styling with transparency and border-radius */
-.footer {
-    background-color: var(--transparency-level);
-    border-radius: var(--border-radius);
-    padding: 10px;
-    text-align: center;
-}
-
-/* Additional tweaks for links */
-a:hover {
-    color: #ff5722; /* Change hover color for links */
-}
-
-/* Inner elements should have transparency, like cards, modals, etc. */
-.card, .container, .header, .footer {
-    background-color: var(--transparency-level);
-    border-radius: var(--border-radius);
-    backdrop-filter: blur(10px);
+    font-family: 'Miyu', sans-serif; /* Apply Miyu font */
 }
 
 .theme-dark {
-    /* Text */
-    --text-normal: #f8e1e5;
-    --header-primary: #f8e1e5;
-    --interactive-normal: #fab1bd;
-    --channels-default: #f8e1e5;
+  /* Text Colors */
+    --text-normal: #fff; /* Keep white text for readability */
+    --header-primary: #fff; /* White headers for contrast */
+    --interactive-normal: #fab1bd; /* Soft pink, fits AMOLED's contrast */
+    --channels-default: #f8e1e5; /* Light pink for subtle emphasis */
 
-    --text-muted: #e2c1c7;
-    --interactive-muted: #ad8c91;
+    --text-muted: #e2c1c7; /* Muted light pinkish tones for less prominent text */
+    --interactive-muted: #ad8c91; /* Muted pinkish-brown for less interactive elements */
 
-    --header-secondary: #e2c1c7;
-    --interactive-hover: #e2c1c7;
-    --interactive-active: #e2c1c7;
+    --header-secondary: #e2c1c7; /* Secondary header in light pink */
+    --interactive-hover: #e2c1c7; /* Hover effect in muted pink */
+    --interactive-active: #e2c1c7; /* Active interaction color, matching hover */
+}
 
-    /* Background color */
-    --background-primary: rgba(46, 31, 34, 0.7) !important;
-    --background-secondary: rgba(75, 49, 50, 0.9);
-    --background-secondary-alt: rgba(117, 73, 82, 0.9);
-    --background-tertiary: #220f14;
-    --background-floating: #221115;
-    --background-accent: #c5536c;
-    --channeltextarea-background: var(--background-secondary);
-    --background-modifier-hover: rgba(56, 31, 31, 0.32);
-    --background-modifier-active: rgba(19, 12, 12, 0.32);
-    --background-modifier-selected: rgba(31, 21, 21, 0.32);
-    --toast-background: #5e3640 !important;
-    --toast-header: #3b1d24 !important;
-    --toast-contents: #49292f !important;
-    --toast-border: #49292f !important;
+/* Background Colors */
+    --background-primary: rgba(46, 31, 34, 0.7) !important; /* Dark background with a touch of transparency */
+    --background-secondary: rgba(75, 49, 50, 0.9); /* Dark reddish shade for secondary backgrounds */
+    --background-secondary-alt: rgba(117, 73, 82, 0.9); /* Slightly lighter for alternate background */
+    --background-tertiary: #220f14; /* Very dark background for tertiary areas */
+    --background-floating: #221115; /* Floating elements with subtle darkness */
+    --background-accent: #c5536c; /* Bold accent color with a deep reddish tone */
+    --channeltextarea-background: var(--background-secondary); /* Use secondary background for text areas */
+    --background-modifier-hover: rgba(56, 31, 31, 0.32); /* Slightly darkened hover background */
+    --background-modifier-active: rgba(19, 12, 12, 0.32); /* More intense hover for active state */
+    --background-modifier-selected: rgba(31, 21, 21, 0.32); /* Selected background effect */
+    --toast-background: #5e3640 !important; /* Toast background with a muted red */
+    --toast-header: #3b1d24 !important; /* Header of toast in a darker shade */
+    --toast-contents: #49292f !important; /* Toast content with a slight red tint */
+    --toast-border: #49292f !important; /* Toast border matches content for consistency */
+}
+
 
     /* Scrollbar */
     --scrollbar-auto-thumb: var(--background-tertiary);
@@ -122,3 +79,71 @@ a:hover {
 /* Hover background */
 .colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal); }
 
+.theme-light {
+    /* Text */
+    --text-normal: #a86373;
+    --header-primary: #a86373;
+    --interactive-normal: #a86373;
+    --channels-default: #a86373;
+
+    --text-muted: #a86373;
+    --interactive-muted: #cf92a0;
+
+    --header-secondary: #cf92a0;
+    --interactive-hover: #be7d8c;
+    --interactive-active: #b36f7f;
+
+    /* Background color */
+    --background-primary: #FFFFFF;
+    --background-secondary: #ffeeee;
+    --background-secondary-alt: #fdc7c7;
+    --background-tertiary: #ffbbbb;
+    --background-floating: #ffbbbb;
+    --background-accent: #c5536c;
+    --channeltextarea-background: var(--background-secondary);
+    --background-modifier-hover: rgba(56, 31, 31, 0.062);
+    --background-modifier-active: rgba(19, 12, 12, 0.123);
+    --background-modifier-selected: rgba(31, 21, 21, 0.11);
+
+    /* Scrollbar */
+    --scrollbar-auto-thumb: var(--background-tertiary);
+    --scrollbar-auto-track: var(--background-secondary-alt);
+    --scrollbar-thin-thumb: var(--background-tertiary);
+    --scrollbar-thin-track: transparent;
+
+    /* Other */
+    --deprecated-quickswitcher-input-background: var(--background-primary);
+}
+
+.colorBrand-ROmMP1 { color: #c5536c; }
+.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { background-color: var(--background-modifier-hover) !important; }
+
+/* Buttons */
+.lookFilled-1Gx00P { background-color: #c5536c !important; }
+.lookFilled-1Gx00P:active, .lookFilled-1Gx00P:hover { background-color: #b64a61 !important; }
+.lookOutlined-3sRXeN:not(.colorWhite-rEQuAQ) { color: #c5536c; border-color: #c5536c; }
+
+/* Hover background */
+.colorDefault-2K3EoJ.focused-3afm-j, .colorDefault-2K3EoJ:active:not(.hideInteraction-1iHO1O) { color: var(--interactive-normal); }
+
+/* Additional Background Customizations */
+:root .app-2CXKsg::before { background: url(https://cdn.wallpapersafari.com/63/86/HcmDPB.jpg); }
+
+:root .app-3xd6d0::before,
+:root .app-3xd6d0::after, 
+:root .app-2CXKsg::after,
+:root .layers-OrUESM::before,
+:root .layers-OrUESM::after,
+:root .bg-1QIAus::after,
+:root .bg-1QIAus::before {
+    content: none !important;
+}
+
+.container-1eFtFS::after { content: "Scared Yet?"; }
+.homeIcon-r0w4ny path { fill: transparent; }
+
+.homeIcon-r0w4ny {
+    background: url('https://cdn.discordapp.com/attachments/530917134100856832/989239956981547088/original.jpg') center/cover no-repeat;
+    min-width: 60px;
+    min-height: 60px;
+}
