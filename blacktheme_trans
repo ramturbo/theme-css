@@ -10,12 +10,10 @@
     --border-radius: 20px;
 
     /* Transparency levels */
-    --transparency-level: rgba(0, 0, 0, 0.6); /* Adjust as needed */
-
-    /* Other additions if required */
+    --transparency-level: rgba(0, 0, 0, 0.7); /* Adjust for inner transparency effect */
 }
 
-/* Apply custom background image */
+/* Apply custom background image to the entire body */
 body {
     background: var(--background-tertiary-alt) no-repeat center center fixed;
     background-size: cover;
@@ -23,19 +21,19 @@ body {
     padding: 0;
 }
 
-/* Add transparency and border-radius to elements */
+/* Inner transparency for content boxes (like in HuaTao theme) */
 .container,
 .header,
 .card {
     background-color: var(--transparency-level);
     border-radius: var(--border-radius);
-    backdrop-filter: blur(10px); /* Optional: Adds a frosted glass effect */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border for transparency */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Light border */
 }
 
-/* Example: Modify hover effect on cards */
+/* Additional hover effect on cards for subtle interactivity */
 .card:hover {
-    border-color: rgba(255, 255, 255, 0.3); /* Slightly brighter on hover */
+    border-color: rgba(255, 255, 255, 0.3); /* Brighter border on hover */
 }
 
 /* Buttons with transparency and border-radius */
@@ -51,7 +49,7 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Footer */
+/* Footer styling with transparency and border-radius */
 .footer {
     background-color: var(--transparency-level);
     border-radius: var(--border-radius);
@@ -59,14 +57,14 @@ button:hover {
     text-align: center;
 }
 
-/* Specific elements from Amoled Cord */
-.card,
-.container,
-.header {
-    background-color: rgba(255, 255, 255, 0.1); /* Lightened background for transparency */
+/* Additional tweaks for links */
+a:hover {
+    color: #ff5722; /* Change hover color for links */
 }
 
-/* Example styling for link hover effects */
-a:hover {
-    color: #ff5722; /* Change hover color as desired */
+/* Inner elements should have transparency, like cards, modals, etc. */
+.card, .container, .header, .footer {
+    background-color: var(--transparency-level);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
 }
