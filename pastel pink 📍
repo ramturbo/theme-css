@@ -1,63 +1,57 @@
 /**
- * @name Lotus ~ PASTEL PINK (Readable Version)
- * @description Softer pastel pink theme with boosted contrast for readability.
- * @author Lisatjehh + Modified by ChatGPT
- * @version 1.0.1
- */
+ * @name Lotus ~ PASTEL PINK
+ * @description Allows you to customize Discord's native Color Scheme.
+ * @author Lisatjehh
+ * @version 1.0.0
+ * @authorId 278543574059057154
+ * @website https://mwittrien.github.io/
+ * @source https://github.com/mwittrien/BetterDiscordAddons/tree/master/Themes/DiscordRecolor/
+ * @BDEditor DiscordRecolor
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500;700&display=swap');
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
 
 :root {
-  /* Accent + Links */
-  --accentcolor: 245,192,203;
+  --accentcolor: 255,235,235;
   --accentcolor2: 255,115,250;
-  --linkcolor: 180,70,120;
-
-  /* Mention highlight */
-  --mentioncolor: 180,60,100;
-
-  /* Text Colors - readable pastel tones */
-  --textbrightest: 255,225,235;
-  --textbrighter: 240,180,200;
-  --textbright: 225,150,175;
-  --textdark: 190,100,130;
-  --textdarker: 150,60,90;
-  --textdarkest: 110,40,70;
-
-  /* Font */
-  --font: 'Libre Franklin';
-
-  /* Backgrounds - soft pinks with better contrast */
-  --backgroundaccent: 255,248,250;
-  --backgroundprimary: 255,230,235;
-  --backgroundsecondary: 255,215,225;
-  --backgroundsecondaryalt: 255,225,235;
-  --backgroundtertiary: 255,210,220;
-  --backgroundfloating: 255,200,215;
-
-  /* Settings Icons */
+  --linkcolor: 136,51,81;
+  --mentioncolor: 200,107,140;
+  --textbrightest: 255,193,210;
+  --textbrighter: 211,136,161;
+  --textbright: 217,142,162;
+  --textdark: 209,109,139;
+  --textdarker: 178,108,123;
+  --textdarkest: 165,74,102;
+  --font: Libre Franklin;
+  --backgroundaccent: 255,255,255;
+  --backgroundprimary: 255,236,240;
+  --backgroundsecondary: 255,214,221;
+  --backgroundsecondaryalt: 255,235,238;
+  --backgroundtertiary: 255,223,229;
+  --backgroundfloating: 255,223,223;
   --settingsicons: 1;
 }
 
-/* 💬 Make @mentions more visible */
-.mention {
-  color: rgb(var(--mentioncolor)) !important;
-  background-color: rgba(var(--mentioncolor), 0.15) !important;
-  font-weight: bold;
-  padding: 2px 4px;
+/* Any custom CSS below here */
+
+/* ✨ Make @mentions more visible */
+.mention,
+.mention:hover {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(200, 40, 100, 0.7) !important;
+  font-weight: 600;
+  padding: 2px 5px;
   border-radius: 4px;
 }
 
-/* 🧠 Optional: improve selected/hover items contrast */
-.theme-dark .selected-1Tbx07, 
-.theme-light .selected-1Tbx07,
-.containerDefault-YUSmu3:hover {
-  background-color: rgba(var(--mentioncolor), 0.08) !important;
-}
-
-/* ✅ Optional: Fix invisible @here/@everyone */
-.mention.highlight {
-  background-color: rgba(var(--mentioncolor), 0.2) !important;
-  color: rgb(var(--mentioncolor)) !important;
+/* #️⃣ Improve visibility of #channel tags */
+.wrapper-1ZcZW-,
+.channelMention,
+.channelMention span {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgba(200, 40, 100, 0.7) !important;
+  font-weight: 500;
+  padding: 1px 4px;
+  border-radius: 4px;
 }
