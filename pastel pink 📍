@@ -1,0 +1,63 @@
+/**
+ * @name Lotus ~ PASTEL PINK (Readable Version)
+ * @description Softer pastel pink theme with boosted contrast for readability.
+ * @author Lisatjehh + Modified by ChatGPT
+ * @version 1.0.1
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500;700&display=swap');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
+
+:root {
+  /* Accent + Links */
+  --accentcolor: 245,192,203;
+  --accentcolor2: 255,115,250;
+  --linkcolor: 180,70,120;
+
+  /* Mention highlight */
+  --mentioncolor: 180,60,100;
+
+  /* Text Colors - readable pastel tones */
+  --textbrightest: 255,225,235;
+  --textbrighter: 240,180,200;
+  --textbright: 225,150,175;
+  --textdark: 190,100,130;
+  --textdarker: 150,60,90;
+  --textdarkest: 110,40,70;
+
+  /* Font */
+  --font: 'Libre Franklin';
+
+  /* Backgrounds - soft pinks with better contrast */
+  --backgroundaccent: 255,248,250;
+  --backgroundprimary: 255,230,235;
+  --backgroundsecondary: 255,215,225;
+  --backgroundsecondaryalt: 255,225,235;
+  --backgroundtertiary: 255,210,220;
+  --backgroundfloating: 255,200,215;
+
+  /* Settings Icons */
+  --settingsicons: 1;
+}
+
+/* 💬 Make @mentions more visible */
+.mention {
+  color: rgb(var(--mentioncolor)) !important;
+  background-color: rgba(var(--mentioncolor), 0.15) !important;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* 🧠 Optional: improve selected/hover items contrast */
+.theme-dark .selected-1Tbx07, 
+.theme-light .selected-1Tbx07,
+.containerDefault-YUSmu3:hover {
+  background-color: rgba(var(--mentioncolor), 0.08) !important;
+}
+
+/* ✅ Optional: Fix invisible @here/@everyone */
+.mention.highlight {
+  background-color: rgba(var(--mentioncolor), 0.2) !important;
+  color: rgb(var(--mentioncolor)) !important;
+}
